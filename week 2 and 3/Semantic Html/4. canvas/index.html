@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- konvajs (2d): use-case: profile image crop,rotate,resize,...etc / 2-d games -->
+    <!-- three.js (3d) -->
+    <canvas style="border: 1px solid black"></canvas>
+
+    <script>
+      const canvas = document.querySelector('canvas')
+      const ctx = canvas.getContext('2d')
+      ctx.fillStyle = 'red'
+      ctx.fillRect(10, 10, 200, 100) //x=10,y=10,width=200,height=100
+    </script>
+  </body>
+</html>
