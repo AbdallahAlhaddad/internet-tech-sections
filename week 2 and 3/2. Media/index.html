@@ -40,9 +40,17 @@
     <!-- TODO: https://caniuse.com/?search=avif -->
 
     <picture>
-      <!-- use if possible -->
-      <source type="image/avif" srcset="snow.avif" />
+      <!-- use if possible (supported) -->
+      <source type="image/avif" srcset="snow.avif" media="(min-width: 900px)" />
+      <source type="image/webp" srcset="snow.webp" />
 
+      <!-- fallback (if webp & avif are not supported)-->
+      <img alt="Hut in the snow" src="snow.jpg" />
+    </picture>
+
+    <picture>
+      <!-- use if possible -->
+      <source type="image/webp" srcset="snow.webp" />
       <!-- fallback -->
       <img alt="Hut in the snow" src="snow.jpg" />
     </picture>
