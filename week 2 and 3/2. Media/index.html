@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      img,
+      picture {
+        max-width: 500px;
+      }
+    </style>
   </head>
   <body>
     <div>
-      <!--TODO: SVG style="color: aqua" -->
+      <!--TODO: change text color for SVG-->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100"
@@ -30,41 +36,44 @@
       </svg>
     </div>
 
-    <img src="" alt="" />
-    <img src="" alt="" srcset="" />
-    <img src="" alt="" sizes="" srcset="" />
+    <img src="./images/desert.jpg" alt="desert image" />
 
-    <!-- TODO: -->
-    <!-- https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/ -->
-    <!-- https://squoosh.app/ -->
-    <!-- TODO: https://caniuse.com/?search=avif -->
+    <div>
+      <!-- TODO: https://caniuse.com/?search=avif (not supported on "edge" yet) -->
+      <!-- TODO: avif vs webp vs original img using "https://squoosh.app/" -->
+      <!-- TODO: mention lossless compression (AI methods are the best on this topic) -->
+      <picture>
+        <!-- use if possible (supported) -->
+        <source type="image/avif" srcset="./images/desert.avif" />
+        <source type="image/webp" srcset="./images/flower.webp" />
 
-    <picture>
-      <!-- use if possible (supported) -->
-      <source type="image/avif" srcset="snow.avif" />
-      <source type="image/webp" srcset="snow.webp" />
-
-      <!-- fallback (if webp & avif are not supported)-->
-      <img alt="Hut in the snow" src="snow.jpg" />
-    </picture>
+        <!-- fallback (if webp & avif are not supported)-->
+        <!-- TODO: try to open this page on edge (avif not supported) -->
+        <img alt="Hut in the snow" src="./images/desert.jpg" />
+      </picture>
+    </div>
 
     <picture>
       <!-- use if possible -->
-      <source srcset="snow.jpg" media="(min-width: 900px)" />
+      <source srcset="./images/flower.webp" media="(min-width: 900px)" />
+
       <!-- fallback -->
-      <img alt="Hut in the snow" src="snow.jpg" />
+      <img alt="desert" src="./images/desert.jpg" />
     </picture>
 
-    <video width="320" height="240" controls>
-      <source src="movie.mp4" type="video/mp4" />
-      <source src="movie.ogg" type="video/ogg" />
-      Your browser does not support the video tag.
-    </video>
+    <div>
+      <!-- TODO: remove "controls" attribute and see the difference -->
+      <video width="320" height="240" controls>
+        <source src="./videos/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-    <audio controls>
-      <source src="horse.ogg" type="audio/ogg" />
-      <source src="horse.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <div>
+      <audio controls>
+        <source src="./audio/Tommee Profitt - In The End.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
   </body>
 </html>
