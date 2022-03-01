@@ -2,30 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!--
+       (Optional)
       TODO Bonus Assignment (Meta tags):
         - "Open Graph meta tags" (SEO optimization)
         - Search for "viewport meta tag" (for mobile responsive design)
         - "theme-color" meta tag
     -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid #333;
-        border-collapse: collapse;
-      }
 
-      thead,
-      tfoot {
-        background-color: skyblue;
-        color: #fff;
-      }
-    </style>
+    <title>Document</title>
   </head>
 
   <body>
@@ -37,56 +23,37 @@
     <h6>Header 6</h6>
     <p>Paragraph1</p>
 
-    <!-- TODO: lorem usage -->
-    <!-- TODO: what is "emmet" and its shortcuts -->
-
     <p>
       Lorem <br />ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aut!
       <span style="background-color: red; color: white">red span </span>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aut!
       <strong>Strong</strong>
       <em>Emphasized</em>
-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, iusto. Lorem ipsum
       dolor sit amet consectetur adipisicing elit. Quis maxime laborum temporibus!
-      Nostrum, saepe dolores corporis
-      <hr> laboriosam rem nobis aperiam deleniti mollitia
+      Nostrum, saepe dolores corporis laboriosam rem nobis aperiam deleniti mollitia
       repellat consequatur deserunt quod soluta, reiciendis distinctio qui voluptatibus
       labore necessitatibus voluptatem accusantium similique non beatae, ipsam ex.
     </p>
+    <hr />
 
-    <!-- Links: -->
+    <!-- Links use-cases: -->
     <div>
       <a href="http://google.com" target="_blank"> google.com (external website)</a> |
       <a href="./about.html">About page (same website)</a> |
+      <a href="#table">Scroll to table</a> |
 
       <a href="tel:+201140000000">call us: +201140000000</a> |
       <a href="mailto:example@yahoo.com">Mail us: example@yahoo.com</a>
-      <!-- TODO 
+      <!-- 
+        TODO (Optional):
         Bonus Assignment: Search and understand "Web Share API" https://web.dev/web-share/ 
       -->
     </div>
 
     <!-- TODO: lists & nested lists -->
-    <ol></ol>
-    <ul></ul>
 
-    <!-- Sub and Sup -->
-    <!-- TODO: mention "LATEX" (MathJAX) to write math and equations instead -->
-    <p>H<sub>2</sub>O</p>
-    <p>X<sup>2</sup>+5</p>
-
-    <!-- bdi (bidirectional text) -->
-    <div>
-      <p>
-        الـ
-        <bdi>web</bdi>
-        مجال مهم
-      </p>
-      <p>الـ web مجال مهم</p>
-    </div>
-
-    <table>
+    <table id="table">
       <thead>
         <tr>
           <th scope="col">Items</th>
@@ -110,5 +77,31 @@
         </tr>
       </tfoot>
     </table>
+
+    <!-- ************************** Optional content below: ************************** -->
+
+    <!-- Sub and Sup -->
+    <!-- TODO: (Optional) mention "LATEX" (MathJAX) to write math and equations instead -->
+    <p>H<sub>2</sub>O</p>
+    <p>X<sup>2</sup>+5</p>
+
+    <!-- bdi (bidirectional text) -->
+    <div>
+      <p>
+        الـ
+        <bdi>web</bdi>
+        مجال مهم
+      </p>
+      <p>الـ web مجال مهم</p>
+    </div>
+
+    <!-- dialog -->
+    <dialog open>
+      <p>Greetings, one and all!</p>
+    </dialog>
+
+    <!-- TODO: (Optional) lorem usage -->
+
+    <!-- TODO: (Optional) what is "emmet" and its shortcuts -->
   </body>
 </html>

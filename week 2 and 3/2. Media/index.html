@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Document</title>
     <style>
       img,
       picture {
-        max-width: 500px;
+        max-width: 300px;
+        display: block;
+        margin: 5px;
       }
     </style>
   </head>
   <body>
+    <img src="./images/desert.jpg" alt="desert image" />
+
     <div>
-      <!--TODO: change text color for SVG-->
+      <!--TODO: change "text color" & size for SVG image-->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100"
@@ -36,31 +38,6 @@
       </svg>
     </div>
 
-    <img src="./images/desert.jpg" alt="desert image" />
-
-    <div>
-      <!-- TODO: https://caniuse.com/?search=avif (not supported on "edge" yet) -->
-      <!-- TODO: avif vs webp vs original img using "https://squoosh.app/" -->
-      <!-- TODO: mention lossless compression (AI methods are the best on this topic) -->
-      <picture>
-        <!-- use if possible (supported) -->
-        <source type="image/avif" srcset="./images/desert.avif" />
-        <source type="image/webp" srcset="./images/flower.webp" />
-
-        <!-- fallback (if webp & avif are not supported)-->
-        <!-- TODO: try to open this page on edge (avif not supported) -->
-        <img alt="Hut in the snow" src="./images/desert.jpg" />
-      </picture>
-    </div>
-
-    <picture>
-      <!-- use if possible -->
-      <source srcset="./images/flower.webp" media="(min-width: 900px)" />
-
-      <!-- fallback -->
-      <img alt="desert" src="./images/desert.jpg" />
-    </picture>
-
     <div>
       <!-- TODO: remove "controls" attribute and see the difference -->
       <video width="320" height="240" controls>
@@ -75,5 +52,30 @@
         Your browser does not support the audio element.
       </audio>
     </div>
+
+    <!-- 
+        TODO Optional:
+        - https://caniuse.com/?search=avif (avif is not supported on "edge" yet  [last checked date: 3 february 2020]) 
+        - avif vs webp vs original img using "https://squoosh.app/"
+        - mention lossless compression (AI methods are the best on this topic)
+        - try to open this page on edge (avif not supported [3 february 2020])
+    -->
+
+    <picture>
+      <!-- use if possible (supported) -->
+      <source type="image/avif" srcset="./images/desert.avif" />
+      <source type="image/webp" srcset="./images/flower.webp" />
+
+      <!-- fallback (if webp & avif are not supported)-->
+      <img alt="Hut in the snow" src="./images/desert.jpg" />
+    </picture>
+
+    <picture>
+      <!-- use if possible -->
+      <source srcset="./images/flower.webp" media="(min-width: 900px)" />
+
+      <!-- fallback -->
+      <img alt="desert" src="./images/desert.jpg" />
+    </picture>
   </body>
 </html>
