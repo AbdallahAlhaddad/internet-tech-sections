@@ -3,26 +3,19 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!--
-       (Optional)
-      TODO Bonus Assignment (Meta tags):
-        - "Open Graph meta tags" (SEO optimization)
-        - Search for "viewport meta tag" (for mobile responsive design)
-        - "theme-color" meta tag
-    -->
     <style>
       html {
         scroll-behavior: smooth;
       }
-      table,
-      th,
-      td {
+      #table,
+      #table th,
+      #table td {
         border: 1px solid #333;
-        border-collapse: collapse;
+        /* border-collapse: collapse; */
       }
 
-      thead,
-      tfoot {
+      #table thead,
+      #table tfoot {
         background-color: skyblue;
         color: #fff;
       }
@@ -47,15 +40,11 @@
 
       <a href="tel:+201140000000">call us: +201140000000</a> |
       <a href="mailto:example@yahoo.com">Mail us: example@yahoo.com</a>
-      <!-- 
-        TODO (Optional):
-        Bonus Assignment: Search and understand "Web Share API" https://web.dev/web-share/ 
-      -->
     </div>
 
-    <p>
+    <p style="width: 400px">
       Lorem <br />ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aut!
-      <span style="background-color: red; color: white">red span </span>
+      <span style="background-color: red; color: white">red span (inline) </span>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aut!
       <strong>Strong</strong>
       <em>Emphasized</em>
@@ -63,11 +52,51 @@
       dolor sit amet consectetur adipisicing elit. Quis maxime laborum temporibus!
       Nostrum, saepe dolores corporis laboriosam rem nobis aperiam deleniti mollitia
       repellat consequatur deserunt quod soluta, reiciendis distinctio qui voluptatibus
-      labore necessitatibus voluptatem accusantium similique non beatae, ipsam ex.
+      labore necessitatibus voluptatem accusantium similique non beatae, ipsam ex. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium vel nulla
+      sed tempora doloribus nostrum debitis nihil ex beatae a, quia reiciendis
+      necessitatibus amet dolorem, aperiam accusantium ipsum neque omnis. Voluptatibus
+      quae fuga, facere dolore deleniti adipisci porro soluta iste illo quasi, incidunt,
+      iure rem qui debitis fugiat. Magnam asperiores nisi omnis quo, blanditiis dolores
+      voluptatibus aperiam eius vitae cumque non soluta! Ullam sapiente quisquam quas
+      autem neque sit aspernatur inventore beatae adipisci nobis facere est modi,
+      necessitatibus molestias eligendi, possimus impedit optio culpa asperiores delectus.
+      Architecto obcaecati iure voluptatibus inventore libero quam ullam officiis
+      laboriosam tempore quidem nesciunt velit, dolorum vitae maiores corrupti sed neque
+      id eligendi voluptatem, sequi eum odit fugiat? Reiciendis dolorem, perferendis
+      veritatis autem, asperiores saepe qui blanditiis aperiam consequatur voluptate,
+      quasi ipsam. Aspernatur explicabo aperiam accusantium unde rerum? Velit perferendis
+      provident ipsum tempora harum vero maxime quasi laborum accusamus nobis. Labore
+      provident illum omnis doloremque earum molestias doloribus enim consequatur officiis
+      praesentium saepe reiciendis vero quas ipsa quasi eum amet pariatur eaque maxime
+      odit totam error, tenetur sit. Ut, porro. Rem delectus aperiam sit. Totam iste, et
+      non blanditiis quidem ullam, illo rem tenetur omnis sed vitae eos, adipisci fugit
+      repellat sit. Sunt, facilis.
     </p>
-    <hr />
-    <!-- TODO: lists & nested lists -->
 
+    <hr />
+
+    <!-- TODO: lists & nested lists -->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>
+        JS
+        <ul>
+          <li>Vue</li>
+          <li>React</li>
+          <li>Angular</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ol>
+
+    <!-- TODO: add col and row span -->
     <table id="table">
       <thead>
         <tr>
@@ -93,30 +122,6 @@
       </tfoot>
     </table>
 
-    <!-- ************************** Optional content below: ************************** -->
-
-    <!-- Sub and Sup -->
-    <!-- TODO: (Optional) mention "LATEX" (MathJAX) to write math and equations instead -->
-    <p>H<sub>2</sub>O</p>
-    <p>X<sup>2</sup>+5</p>
-
-    <!-- bdi (bidirectional text) -->
-    <div>
-      <p>
-        الـ
-        <bdi>web</bdi>
-        مجال مهم
-      </p>
-      <p>الـ web مجال مهم</p>
-    </div>
-
-    <!-- dialog -->
-    <dialog open>
-      <p>Greetings, one and all!</p>
-    </dialog>
-
-    <!-- TODO: (Optional) lorem usage -->
-
-    <!-- TODO: (Optional) what is "emmet" and its shortcuts -->
+    <!-- TODO: Table Exam answer: -->
   </body>
 </html>

@@ -52,30 +52,5 @@
         Your browser does not support the audio element.
       </audio>
     </div>
-
-    <!-- 
-        TODO Optional:
-        - https://caniuse.com/?search=avif (avif is not supported on "edge" yet  [last checked date: 3 february 2020]) 
-        - avif vs webp vs original img using "https://squoosh.app/"
-        - mention lossless compression (AI methods are the best on this topic)
-        - try to open this page on edge (avif not supported [3 february 2020])
-    -->
-
-    <picture>
-      <!-- use if possible (supported) -->
-      <source type="image/avif" srcset="./images/desert.avif" />
-      <source type="image/webp" srcset="./images/flower.webp" />
-
-      <!-- fallback (if webp & avif are not supported)-->
-      <img alt="Hut in the snow" src="./images/desert.jpg" />
-    </picture>
-
-    <picture>
-      <!-- use if possible -->
-      <source srcset="./images/flower.webp" media="(min-width: 900px)" />
-
-      <!-- fallback -->
-      <img alt="desert" src="./images/desert.jpg" />
-    </picture>
   </body>
 </html>

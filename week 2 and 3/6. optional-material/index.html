@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- **======================= Meta tags =======================**  -->
+    <!--
+       (Optional) Bonus Assignment (Meta tags):
+          - "Open Graph meta tags" (SEO optimization).
+          - Search for "viewport meta tag" (for mobile responsive design).
+          - "theme-color" meta tag.
+    -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- **======================= vscode tricks to speed up your code writing =======================**  -->
+
+    <!--  (Optional) what is "emmet" and its shortcuts -->
+
+    <!--  (Optional) lorem usage -->
+
+    <!-- **======================= Sharing your website on social media =======================**  -->
+    <!-- 
+        (Optional):
+        Bonus Assignment: Search and understand "Web Share API" https://web.dev/web-share/
+
+    -->
+
+    <!-- **======================= Extra HTML5 Elements =======================**  -->
+    <!-- 
+      subscript and superscript:
+      - (Optional) mention "LATEX" (MathJAX) to write math and equations instead: https://www.mathjax.org/#demo
+    -->
+    <p>H<sub>2</sub>O</p>
+    <p>X<sup>2</sup>+5</p>
+
+    <!-- bdi (bidirectional text) -->
+    <div>
+      <p>
+        الـ
+        <bdi>web</bdi>
+        مجال مهم
+      </p>
+      <p>الـ web مجال مهم</p>
+    </div>
+
+    <!-- dialog -->
+    <dialog open>
+      <p>Greetings, one and all!</p>
+    </dialog>
+
+    <!-- **======================= Picture element =======================**  -->
+    <!-- 
+        TODO Optional:
+        - https://caniuse.com/?search=avif (avif is not supported on "edge" yet  [last checked date: 3 february 2022]) 
+        - avif vs webp vs original img using "https://squoosh.app/"
+        - mention lossless compression (AI methods are the best on this topic)
+        - try to open this page on edge (avif not supported [3 february 2022])
+    -->
+    <picture>
+      <!-- use if possible (supported) -->
+      <source type="image/avif" srcset="../2. Media/images/desert.avif" />
+      <source type="image/webp" srcset="../2. Media/images/flower.webp" />
+
+      <!-- fallback (if webp & avif are not supported)-->
+      <img alt="Hut in the snow" src="../2. Media/images/desert.jpg" />
+    </picture>
+
+    <picture>
+      <!-- use if possible -->
+      <source srcset="../2. Media/images/flower.webp" media="(min-width: 900px)" />
+
+      <!-- fallback -->
+      <img alt="desert" src="../2. Media/images/desert.jpg" />
+    </picture>
+
+    <!-- **======================= Canvas element =======================**  -->
+    <!-- 
+      TODO (Optional) talk about:
+      - konvajs (2d): https://konvajs.org/
+      - three.js (3d): https://threejs.org/examples/#webgl_animation_skinning_blending
+    -->
+  </body>
+</html>
