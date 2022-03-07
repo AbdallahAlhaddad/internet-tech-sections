@@ -19,6 +19,11 @@
         background-color: skyblue;
         color: #fff;
       }
+
+      table,
+      td {
+        border: 1px solid red;
+      }
     </style>
     <title>Document</title>
   </head>
@@ -36,6 +41,12 @@
     <div>
       <a href="http://google.com" target="_blank"> google.com (external website)</a> |
       <a href="./about.html">About page (same website)</a> |
+
+      <!--
+        !(Exam question):
+        What does the web server typically do with the following html fragment:“
+        <a href="#top">Top</a>”. 
+      -->
       <a href="#table">Scroll to table</a> |
 
       <a href="tel:+201140000000">call us: +201140000000</a> |
@@ -96,7 +107,21 @@
       <li>three</li>
     </ol>
 
-    <!-- TODO: add col and row span -->
+    <!-- rarely used -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        Hypertext Markup Language, a standardized system for tagging text files to achieve
+        font, colour, graphic, and hyperlink effects on World Wide Web pages.
+      </dd>
+
+      <dt>CSS</dt>
+      <dd>
+        CSS stands for Cascading Style Sheets · CSS describes how HTML elements are to be
+        displayed on screen, paper, or in other media
+      </dd>
+    </dl>
+
     <table id="table">
       <thead>
         <tr>
@@ -122,6 +147,6 @@
       </tfoot>
     </table>
 
-    <!-- TODO: Table Exam answer: -->
+    <!-- TODO (col & row span): Exam HTML Table answer  -->
   </body>
 </html>
