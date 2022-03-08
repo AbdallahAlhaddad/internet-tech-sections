@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The world of fruit</title>
+  </head>
+
+  <body>
+    <h1>The world of fruit</h1>
+    <h2>Fruit Survey</h2>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" />
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" />
+      </div>
+
+      <!-- Radio Group -->
+      <p>
+        How Many pieces of fruit <br />
+        do you eat per day?
+      </p>
+      <div>
+        <div>
+          <input type="radio" id="f1" name="fruit-num" value="0" />
+          <label for="f1">0</label>
+        </div>
+        <div>
+          <input type="radio" id="f2" name="fruit-num" value="1" />
+          <label for="f2">1</label>
+        </div>
+        <div>
+          <input type="radio" id="f3" name="fruit-num" value="2" />
+          <label for="f3">2</label>
+        </div>
+        <div>
+          <input type="radio" id="f4" name="fruit-num" value="More than 2" />
+          <label for="f4">More than 2</label>
+        </div>
+      </div>
+
+      <!-- Select Menu -->
+      <p>My favorite fruit</p>
+      <div>
+        <select name="fav-fruit" size="4">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="plum">Plum</option>
+          <option value="pomegranate">Pomegranate</option>
+          <option value="orange">Orange</option>
+          <option value="mango">Mango</option>
+        </select>
+      </div>
+
+      <!-- checkbox -->
+      <label for="brochure">
+        Would you like a brochure
+      </label>
+
+      <input type="checkbox" id="brochure" name="brochure" />
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

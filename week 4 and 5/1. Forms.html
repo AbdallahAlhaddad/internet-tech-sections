@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Forms</title>
+    <style>
+      div {
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="fn">First Name:</label>
+        <input required placeholder="first name" type="text" name="firstName" id="fn" />
+      </div>
+
+      <div>
+        <label for="ln">Last Name: </label>
+        <input type="text" name="LastName" id="ln" />
+      </div>
+
+      <div>
+        <label for="pwd">Password:</label>
+        <input type="password" name="password" id="pwd" />
+      </div>
+
+      <div>
+        <label for="age">Age:</label>
+        <input min="20" max="50" type="number" name="age" id="age" />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div>
+        <label for="description">description</label><br />
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="birthdate">Date of birth:</label>
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+
+      <div>
+        <label for="time">Optimal time:</label>
+        <input type="time" name="birthday" id="time" />
+      </div>
+
+      <div>
+        <label for="datetime">Date and time</label>
+        <input type="datetime-local" name="datetime" id="datetime" />
+      </div>
+
+      <div>
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" name="volume" min="0" max="11" step="1" />
+      </div>
+
+      <div>
+        <label for="color">Pick your color:</label>
+        <input type="color" name="ucolor" id="color" />
+      </div>
+
+      <div>
+        <label for="cv">Upload your CV:</label>
+        <input accept=".pdf, .png" type="file" name="cv" id="cv" />
+      </div>
+
+      <div>
+        <p>Select your gender:</p>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+      </div>
+
+      <!-- <fieldset>
+        <legend>Select your gender:</legend>
+        <input type="radio" name="gender" value="female" id="female2" />
+        <label for="female2">Female</label>
+
+        <input type="radio" name="gender" value="male" id="male2" />
+        <label for="male2">Male</label>
+      </fieldset> -->
+
+      <div>
+        <p>Select your skills:</p>
+
+        <input type="checkbox" name="skill" value="JavaScript" id="js" />
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="skill" value="PHP" id="php" />
+        <label for="php">PHP</label>
+
+        <input type="checkbox" name="skill" value="CPP" id="cpp" />
+        <label for="cpp">C++</label>
+
+        <input type="checkbox" name="skill" value="csharp" id="csharp" />
+        <label for="csharp">C#</label>
+      </div>
+
+      <div>
+        <!-- 
+          TODO: add attribute: size="2" (important for exam)(world of fruits form)
+        -->
+        <select name="country">
+          <option value="eg">Egypt</option>
+          <option value="us">US</option>
+          <option value="lo">London</option>
+          <option value="ch">China</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">OK</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>
