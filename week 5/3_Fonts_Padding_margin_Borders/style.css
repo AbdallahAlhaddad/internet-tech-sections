@@ -1,0 +1,45 @@
+.colors {
+  background-color: aqua; /* background color*/
+  color: darkviolet; /*text color*/
+}
+
+.width-height {
+  height: 100px;
+  width: 100px;
+}
+
+.border {
+  border: 3px solid red; /* border-width , border-style ,  */
+  border-left-width: 10px;
+  border-top-style: dotted;
+}
+
+.padding {
+  padding: 10px; /*padding from all sides*/
+  padding: 10px 20px 30px 40px; /* top, right, bottom, left (clock-wise)*/
+  padding: 40px 10px; /* 40:(top  & bottom),  10:(right & left) */
+  padding-left: 0px; /* padding-top, padding-bottom, padding-left, padding-right */
+}
+
+.margin {
+  /*! Note: margin property has the same shorthands as padding above !*/
+  margin: 20px;
+}
+
+.text {
+  color: darkviolet;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif; /*Font-family "Arial" with fallback values: Helvetica*/
+  font-weight: 500; /* from 100 to 900 */
+  letter-spacing: 4px; /* space between each letter*/
+  line-height: 200px; /* space between lines */
+  text-transform: uppercase; /* capitalize, lowercase, uppercase */
+}
+
+.align-text {
+  text-align: right;
+}
+
+.arabic-text {
+  direction: rtl; /*right to left*/
+}

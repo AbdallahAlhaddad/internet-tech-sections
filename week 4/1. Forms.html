@@ -11,7 +11,7 @@
     <form>
       <div>
         <label for="fn">First Name:</label>
-        <input required placeholder="first name" type="text" name="firstName" id="fn" />
+        <input required placeholder="name" type="text" name="firstName" id="fn" />
       </div>
 
       <div>
@@ -63,7 +63,7 @@
           value="2"
           min="0"
           max="10"
-          step="1"
+          step="2"
         />
       </div>
 
@@ -74,7 +74,7 @@
 
       <div>
         <label for="cv">Upload your CV:</label>
-        <input accept=".pdf, .png" type="file" name="cv" id="cv" />
+        <input accept=".pdf, .png, image/*" type="file" name="cv" id="cv" />
       </div>
 
       <div>
@@ -114,7 +114,7 @@
         <!-- 
           TODO: add attribute: size="2" (world of fruits form)
         -->
-        <select name="country">
+        <select name="country>
           <option value="eg">Egypt</option>
           <option value="us">US</option>
           <option value="lo">London</option>

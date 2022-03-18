@@ -1,0 +1,24 @@
+h1 {
+  font-size: 16px;
+  color: red;
+}
+
+.header1 {
+  font-size: 20px;
+  color: gold;
+}
+
+.header2 {
+  font-size: 20px;
+  color: blueviolet;
+}
+
+#header1 {
+  font-size: 25px;
+  color: aqua;
+}
+
+#header2 {
+  font-size: 25px;
+  color: green;
+}

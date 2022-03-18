@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inline vs internal vs external</title>
+
+    <!-- TODO: (important) Move "internal css" below "external css" link -->
+    <!-- internal css: -->
+    <style>
+      .internal-css {
+        background-color: aqua;
+        height: 200px;
+        font-size: 25px;
+      }
+    </style>
+
+    <!-- external css: -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- inline css: -->
+    <div style="background-color: red; color: white; height: 100px; font-size: 20px">
+      inline css
+    </div>
+
+    <div class="internal-css">internal css</div>
+
+    <div class="external-css">external css</div>
+
+    <div
+      style="background-color: red; color: white; height: 100px; font-size: 20px"
+      class="internal-css"
+    >
+      internal & inline css
+    </div>
+
+    <div class="internal-css external-css">internal & external css</div>
+  </body>
+</html>

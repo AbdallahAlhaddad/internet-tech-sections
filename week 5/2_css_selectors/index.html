@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>selectors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--================ PART 1: ================-->
+    <h1>Element selector</h1>
+
+    <h1 class="header1">class selector (more specific than element selector)</h1>
+
+    <h1 id="header1" class="header1">
+      id selector (more specific than element selectors & class selectors)
+    </h1>
+
+    <h1 style="color: black; font-size: 30px" id="header2">
+      inline css vs id selector (inline more specific than using id selectors)
+    </h1>
+
+    <!-- Note: 
+        - ids should be unique (one id should be used only on one element).99
+        - classes can be used as much as you need them.
+    -->
+
+    <!--================ PART 2: ================-->
+    <h2 class="header1">header class 1</h2>
+
+    <h2 class="header2 header1">
+      header1 & header2 (note: "header2" comes after "header1" in the style sheet)
+      (overrides it)
+    </h2>
+    <h2 class="header1 header2">
+      header1 & header2 (note: "header2" comes after "header1" in the style sheet)
+      (overrides it)
+    </h2>
+  </body>
+</html>
