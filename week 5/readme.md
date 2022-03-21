@@ -1,7 +1,7 @@
 - Intro:
   https://www.youtube.com/watch?v=89VLfs-wpEY&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=2
 
-- (very important) inline,internal, & external styles:
+- (very important) inline, internal, & external styles:
   https://www.youtube.com/watch?v=66sjwQ-hB64&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=3
 
 - background color, etc...:
