@@ -7,16 +7,18 @@
 if (true) {
   var varVariable = 'this is true'
 }
+
 console.log(varVariable) //'this is true'
 
 if (true) {
   let letVariable = 'this is true'
 }
-// console.log(letVariable) //(error) "letVariable is not defined"
+//console.log(letVariable) //(error) "letVariable is not defined"
 
 //? ==> "let" is like var, but it's block scoped instead of function scoped:
 let y = 'hello'
 y = 3
+
 console.log(y) //3 (no errors)
 
 //? ==> "const" variable can't be reassigned:
@@ -31,6 +33,7 @@ const objectsInJs = {
   key3: [1, 2, 3],
   key4: { key: 'value' },
 }
+console.log(objectsInJs['key4'])
 const strings = 'hello world !'
 const booleans = true || false
 

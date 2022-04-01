@@ -1,0 +1,68 @@
+<!-- 
+  Recommended videos to watch:
+  - https://www.youtube.com/watch?v=-qbGxua98To&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=11
+  - https://www.youtube.com/watch?v=wYSAjaB3mL8&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=57
+  - https://www.youtube.com/watch?v=gZ3XNPelC5Y&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=58
+  - https://www.youtube.com/watch?v=BJupwn_ii8g&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=62
+  - https://www.youtube.com/watch?v=-GR52czEd-0
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blog</title>
+    <style>
+      html,
+      body {
+        min-height: 100vh;
+        margin: 0; /*optional property*/
+      }
+
+      body {
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'article aside';
+        grid-template-rows: min-content 1fr; /* or:  min-content auto */
+        grid-template-columns: 1fr 250px; /* or:  auto        250px */
+      }
+      .header {
+        background-color: red;
+        grid-area: header;
+      }
+      aside {
+        background-color: green;
+        grid-area: aside;
+      }
+      article {
+        background-color: blue;
+        grid-area: article;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+    </header>
+    <article>
+      <header>
+        <h1>Article Title</h1>
+      </header>
+      <div>
+        <h2>subtitle 1</h2>
+        <p>paragraph 1</p>
+
+        <h2>subtitle 2</h2>
+        <p>paragraph 2</p>
+
+        <h2>subtitle 3</h2>
+        <p>paragraph 3</p>
+      </div>
+    </article>
+    <aside>
+      <p>aside paragraph (indirectly related to the page content)</p>
+    </aside>
+  </body>
+</html>
