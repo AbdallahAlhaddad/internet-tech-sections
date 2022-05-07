@@ -13,7 +13,7 @@
     <style>
       html,
       body {
-        min-height: 100vh;
+        height: 100%;
         margin: 0; /*optional property*/
       }
 
@@ -22,8 +22,13 @@
         grid-template-areas:
           'header header'
           'article aside';
-        grid-template-rows: min-content 1fr; /* or:  min-content auto */
-        grid-template-columns: 1fr 250px; /* or:  auto        250px */
+
+        grid-template-rows: auto 1fr;
+        /* OR:  grid-template-rows: min-content auto; */
+        /* OR:  grid-template-rows: min-content 1fr;*/
+
+        grid-template-columns: 1fr 250px;
+        /* OR: grid-template-columns: auto 250px; */
       }
       .header {
         background-color: red;
