@@ -9,13 +9,12 @@ if (!$con) {
 }
 
 
-// $sql = "INSERT INTO `users` (`id`, `email`, `password`) VALUES (NULL, 'diaa@gmail.com', 'Ahmed123')";
+// $sql = "INSERT INTO `users` (`id`, `email`, `password`) VALUES (NULL, 'mohamed@gmail.com', 'mohamed')";
 
 // if (mysqli_query($con, $sql)) {
 //   echo "New record created successfully";
 // } else {
 //   echo "Error: " . $sql . "<br>" . mysqli_error($con);
 // }
-
 
 ?> 

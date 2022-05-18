@@ -18,11 +18,11 @@
      * or like this!
      */
 
-    $name = "Ahmed";
+    $name = "ali";
 
-    echo "Hello {$name}", "<h1>hello {$name}</h1>"; //double quotes (can pass variables)
     // echo "Hello " . $name . '<br>'; // string concatenation
 
+    echo "Hello {$name}", "<h1>hello {$name}</h1>"; //double quotes (can pass variables)
     echo 'Hello <h1>hello {$name}</h1>'; //single quotes (cannot pass variables)
 
 
