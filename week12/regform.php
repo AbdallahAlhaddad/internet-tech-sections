@@ -9,13 +9,13 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pwd']) && i
     $email = $_POST['email'];
     $pass = $_POST['pwd'];
 
-    $sql = "INSERT INTO users (name, Email, password) VALUES ('$name', '$email', '$pass')";
+    $query = "INSERT INTO users (name, Email, password) VALUES ('$name', '$email', '$pass')";
 
     //check 
-    if (mysqli_query($con, $sql)) {
+    if (mysqli_query($con, $query)) {
       header("location:login.html");
     } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($con);
+      echo "Error: " . $query . "<br>" . mysqli_error($con);
     }
     mysqli_close($con);
   } else {
